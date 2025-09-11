@@ -131,7 +131,7 @@ export default function UploadImage() {
       formData.append("file", file);
       formData.append("model_name", model); 
 
-      const res = await axios.post(`${apiBase}/api/images/upload`, formData, {
+      const res = await axios.post(`https://web-production-793c2.up.railway.app/api/images/upload`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
