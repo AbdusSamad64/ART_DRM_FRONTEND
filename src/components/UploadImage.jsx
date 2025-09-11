@@ -226,7 +226,10 @@ export default function UploadImage() {
           <button
             type="submit"
             disabled={loading || !file}
-            className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold bg-indigo-600 hover:bg-indigo-700 transition disabled:opacity-50"
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold 
+             bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
+             hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 
+             text-white shadow-lg transition disabled:opacity-50"
           >
             {loading ? (
               <>
